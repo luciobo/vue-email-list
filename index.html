@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 
 <head>
     <meta charset="UTF-8">
@@ -19,10 +19,9 @@
 
     <div id="app">
         <div class="text-center p-5">
-            <h1>Qulla roba li</h1>
+            <h1>Lista Mail Utenti</h1>
             <ul>
-                <li>ciao ciao</li>
-                <li>ciao ciao</li>
+                <li v-for="(mailUtente, i) in listaMailUtenti" :key="i" > {{mailUtente + " " +i}}</li>
             </ul>
         </div>
     </div>
