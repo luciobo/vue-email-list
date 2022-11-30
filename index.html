@@ -19,9 +19,9 @@
 
     <div id="app">
         <div class="text-center p-5">
-            <h1>Lista Mail Utenti</h1>
-            <ul>
-                <li class="p-1 box-mail"
+            <h1 class="mb-5">Lista Mail Utenti</h1>
+            <ul class="d-flex align-items-center flex-column gap-3">
+                <li class="box-mail"
                     v-for="(mailUtente, i) in listaMailUtenti" :key="i">
                     <!-- vfor sopra ------------------------------------>
                     {{mailUtente + " " +i}}

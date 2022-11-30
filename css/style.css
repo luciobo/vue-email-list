@@ -5,5 +5,8 @@ li {
 
 .box-mail {
     background-color: aqua;
-    border-radius: 10px;
+    border-radius: 18px;
+    padding: 1rem;
+    min-width: 300px;
+
 }
