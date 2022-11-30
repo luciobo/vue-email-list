@@ -12,13 +12,13 @@ createApp({
         // la funzione data deve SEMPRE ritornare un oggetto
         return {
             listaMailUtenti: []
-            
+
         };
     },
     methods: {
         datiScaricati() {
             axios.get("https://flynn.boolean.careers/exercises/api/random/mail")
-                .then( (risposta) => {
+                .then((risposta) => {
 
                     console.log(risposta);
 
