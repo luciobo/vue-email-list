@@ -10,10 +10,31 @@ createApp({
     // data: function () {}
     data() {
         // la funzione data deve SEMPRE ritornare un oggetto
-        return {};
+        return {
+            listaMail: []
+        };
     },
     methods: {
+        datiScaricati() {
+            axios.get("https://flynn.boolean.careers/exercises/api/random/mail")
+                .then(function (risposta) {
+
+                    console.log(risposta);
+
+                    console.log(risposta.data);
+
+                    console.log(risposta.data.response)
+                }
+
+                )
+        },
 
     },
-    
+
+    beforeMount() {
+    },
+    mounted() {
+        this.datiScaricati()
+    }
+
 }).mount("#app")
